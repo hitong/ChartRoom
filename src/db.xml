@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<db>
+    <entity class="model.User" table="user">
+		  <field name="userId" column="UserId" type="String" key="true"/>
+  	 	<field name="name" column="Name" type="String"/>
+   		<field name="psw" column="Password" type="String"/>
+  </entity>
+
+     <entity class="model.Message" table="message">
+		  <field name="messageId" column="MessageId" type="String" key="true"/>
+      <field name="cmd" column="Cmd" type="Smallint"/>
+   		<field name="from" column="mFrom" type="String"/>
+   		<field name="to" column="mTo" type="String"/>
+   		<field name="data" column="mData" type="String"/>
+  </entity>
+
+  <entity class="model.ChildMessage" table="childMessage">
+		 <field name="messageId" column="MessageId" type="String" key="true"/>
+  	 	<field name="meg" column="Meg" type="String"/>
+  </entity>
+
+      <entity class="model.Relation" table="relation">
+		  <field name="userAId" column="UserAId" type="String" key="true"/>
+  	 	<field name="userBId" column="UserBId" type="String" key="true"/>
+  </entity>
+
+      <entity class="model.Group" table="group">
+		  <field name="groupId" column="GroupId" type="String" key="true"/>
+  	 	<field name="userId" column="UserId" type="String"/>
+  </entity>
+</db>
+

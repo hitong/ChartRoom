@@ -1,0 +1,133 @@
+/**
+ * 设置舞台背景图片
+ */
+.root {    
+	 -fx-background-image: url("loginBG.jpg");
+}
+
+
+/** 
+ * 设置风格标签
+ * */
+ .label{
+    -fx-font-size: 12.0px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333; 
+    -fx-effect: dropshadow( gaussian , rgba(255.0,255.0,255.0,0.5) , 0.0,0.0,0.0,1.0 );
+ }
+
+ /*
+  *设置标题文本样式
+  */
+ #title{
+    -fx-font-size: 32.0px;
+    -fx-font-family: "Arial Blackt";
+    -fx-fill: #818181;
+    -fx-effect: innershadow( three-pass-box , rgba(0.0,0.0,0.0,0.7) , 6.0, 0.0 , 0.0 , 2.0 );
+ }
+
+ /** 
+  * 设置提示文本样式
+  * */ 
+ #actiontarget {
+  -fx-fill: FIREBRICK;
+  -fx-font-weight: bold;
+  -fx-effect: dropshadow( gaussian , rgba(255.0,255.0,255.0,0.5) , 0.0,0.0,0.0,1.0 );  
+}
+
+/**
+ * 设置登陆按钮样式
+ */
+ .button {
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(	#708090, #0000FF);
+    -fx-effect: dropshadow( three-pass-box , rgba(0.0,0.0,0.0,0.6) , 5.0, 0.0 , 0.0 , 1.0 );
+}
+/*设置登陆按钮悬停样式 */
+.button:hover {    -fx-background-color: linear-gradient(	#1E90FF, #87CEFA);
+	   -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+}
+
+VBox {
+    -fx-background-color: linear-gradient(	#1E90FF, #87CEFA);
+}
+
+.text-area {
+    -fx-font-family: Consolas;
+    -fx-font-size: 21;
+    -fx-text-fill: #ffffff;
+    -fx-display-caret:true;
+        -fx-background-radius: 10em;
+}
+
+.text-area .content {
+	-fx-background-color: linear-gradient(	#1E90FF, #87CEFA);
+}
+.menu-item .label {
+    -fx-text-fill: white;
+}
+
+.menu-item:focused {
+     -fx-background-color: darkgray;
+}
+
+.menu-item:focused .label {
+    -fx-text-fill: blue;
+}
+
+.context-menu {
+ /*    -fx-skin: "com.sun.javafx.scene.control.skin.ContextMenuSkin";*/
+    -fx-background-image: url("listBG.jpg");
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 0 6 6 6, 0 5 5 5, 0 4 4 4;
+    -fx-padding: 0.333333em 0.083333em 0.666667em 0.083333em; /* 4 1 8 1 */
+}
+
+.scroll-pane {
+    -fx-background-color: linear-gradient(	#1E90FF, #87CEFA);
+}
+
+.scroll-bar:horizontal, .scroll-bar:vertical{
+    -fx-background-color:transparent;
+}
+
+.increment-button, .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 10em;
+}
+
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: white;
+    -fx-background-radius: 5em;
+}
+
+.table-view > .virtual-flow > .scroll-bar > .increment-button, 
+.table-view > .virtual-flow > .scroll-bar > .decrement-button ,
+.table-view > .virtual-flow > .scroll-bar {
+    -fx-opacity: 1;
+    -fx-background-radius: 0em;
+}
+.table-view{
+	-fx-background-color:  linear-gradient(	#1E90FF, #87CEFA);
+}
+.table-row-cell{
+	-fx-background-color: rgba(0,0,0,0.5);
+}
+.tab-pane:top *.tab-header-area {
+    -fx-background-insets: 0, 0 0 1 0;
+ /* -fx-padding: 0.416667em 0.166667em 0.0em 0.833em; /* 5 2 0 10 */
+    -fx-padding: 0.416667em 0.166667em 0.0em 0.0em; /* overridden as 5 2 0 0 */
+}

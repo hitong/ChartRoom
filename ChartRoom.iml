@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="EclipseModuleManager">
+    <libelement value="jar://$MODULE_DIR$/../org.json.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/../apache-mina-2.0.18-bin/apache-mina-2.0.18/lib/slf4j-api-1.7.25.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/../apache-mina-2.0.18-bin/apache-mina-2.0.18/dist/mina-core-2.0.18.jar!/" />
+    <conelement value="org.eclipse.fx.ide.jdt.core.JAVAFX_CONTAINER" />
+    <src_description expected_position="0">
+      <src_folder value="file://$MODULE_DIR$/src" expected_position="0" />
+    </src_description>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/bin" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="WebBuilde" exported="" />
+    <orderEntry type="library" exported="" name="org.eclipse.fx.ide.jdt.core.JAVAFX_CONTAINER" level="application" />
+    <orderEntry type="module-library">
+      <library name="org.json.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../org.json.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="slf4j-api-1.7.25.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../apache-mina-2.0.18-bin/apache-mina-2.0.18/lib/slf4j-api-1.7.25.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="mina-core-2.0.18.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../apache-mina-2.0.18-bin/apache-mina-2.0.18/dist/mina-core-2.0.18.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="library" name="dom4j-2.1.1" level="project" />
+    <orderEntry type="library" name="mysql-connector-java-8.0.11" level="project" />
+  </component>
+</module>
